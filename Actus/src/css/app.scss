@@ -1,1 +1,51 @@
 // app global css
+
+:root {
+  --actus-bg-deep: #04251c;
+  --actus-bg-mid: #07382a;
+  --actus-bg-header: #101a17;
+  --actus-green: #22c55e;
+  --actus-green-dark: #0b5a3c;
+  --actus-green-soft: #86efac;
+  --actus-card: #f1f6f4;
+  --actus-text: #ffffff;
+  --actus-muted: #a7c4b8;
+  --actus-border: rgba(255, 255, 255, 0.1);
+  --actus-font: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
+  --actus-mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+html,
+body,
+#q-app {
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--actus-font);
+  color: var(--actus-text);
+  background-color: var(--actus-bg-deep);
+  background-image:
+    radial-gradient(1200px 700px at 85% 0%, rgba(34, 197, 94, 0.14), transparent 60%),
+    linear-gradient(160deg, #0a4a37 0%, var(--actus-bg-mid) 35%, var(--actus-bg-deep) 100%);
+  background-attachment: fixed;
+}
+
+.actus-mono {
+  font-family: var(--actus-mono);
+}
+
+.actus-container {
+  width: 100%;
+  max-width: 1520px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (max-width: 600px) {
+  .actus-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
